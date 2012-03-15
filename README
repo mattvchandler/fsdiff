@@ -1,0 +1,7 @@
+fsdiff
+
+fsdiff is a tool for comparing ext2 filesystem images, written for a graduate digital forensics class.
+Currently only ext2 is supported, but ext3 seems to work fine as well due tothem beingnearly identical. use at your own risk.
+Input is a raw filesystem image, such as would be produced with dd. You could also run as root against the actual disk if you're into that sort of thing. Try not to break anything.
+
+-Matt Chandler
