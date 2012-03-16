@@ -1,7 +1,7 @@
 #ifndef __EXT2_H__
 #define __EXT2_H__
 //ext2.h
-//Matthew Chandler
+//Copyright 2012 Matthew Chandler
 //CS 680 Project
 //11-1-11
 

@@ -1,5 +1,5 @@
 //ext2.cpp
-//Matthew Chandler
+//Copyright 2012 Matthew Chandler
 //CS 680 Project
 //11-1-11
 

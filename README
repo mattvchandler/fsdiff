@@ -1,5 +1,16 @@
 fsdiff
 
 fsdiff is a tool for comparing ext2 filesystem images, written for a graduate digital forensics class.
+
+Usage:
+    fsdiff image1 image2
+
+fsdiff currently only scans the filesystem header and the directory tree of the images only. That means that changes to unused space will not be detected.
+Filesystem images tend to be large, and thus will take a long time to scan through. Be patient.
 Currently only ext2 is supported, but ext3 seems to work fine as well due tothem beingnearly identical. use at your own risk.
 Input is a raw filesystem image, such as would be produced with dd. You could also run as root against the actual disk if you're into that sort of thing. Try not to break anything.
+
+Building:
+A simple makefile is included. fsdiff only uses the C++ STL, so no external libraries are needed
+It does use a few C++11 features: unordered_map, and the cstdint library. Both have been availible to gcc for a while with the -std=c++0x flag.
+fsdiff should also be able to build and run under windows using MSVC++ 2010 or higher.
